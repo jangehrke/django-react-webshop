@@ -7,8 +7,8 @@
 ### Create virtual environment and activate it
 
 ```
-python -m venv venv
-source venv/bin/activate
+py -m venv venv
+.\venv\Scripts\Activate.ps1
 ```
 
 ### Installing required backend packages
