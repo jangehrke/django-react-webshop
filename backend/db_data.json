@@ -1,0 +1,1543 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "webshop",
+    "model": "product"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "webshop",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "webshop",
+    "model": "address"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "webshop",
+    "model": "cart"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "webshop",
+    "model": "cartitem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "webshop",
+    "model": "order"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "webshop",
+    "model": "orderitem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "webshop",
+    "model": "category"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "c001uuea02g7ljtvqw4oo4rjja0kr5ta",
+  "fields": {
+    "session_data": ".eJxVjDEOgzAMAP_iuYoIsd2EsTtvQI4TGtoKJAJT1b9XSAztene6Nwyyb2XYa16HKUEHFi6_LIo-83yI9JD5vhhd5m2dojkSc9pq-iXl1-1s_wZFaoEO0HL0wREhRyUOrbpA1uLVOXYcFBE1eWJHKlmUtPGj2IYxWR1TbOHzBadDNxI:1vqQU7:EnCXiVb6WKgTv0jcsTdAPX7nUEPJAiSzvzmPZEzLQnU",
+    "expire_date": "2026-02-26T06:47:31.533Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "tdxmft0b155ug4d6s26ja63ryeynctj1",
+  "fields": {
+    "session_data": ".eJxVjDEOgzAMAP_iuYoIsd2EsTtvQI4TGtoKJAJT1b9XSAztene6Nwyyb2XYa16HKUEHFi6_LIo-83yI9JD5vhhd5m2dojkSc9pq-iXl1-1s_wZFaoEO0HL0wREhRyUOrbpA1uLVOXYcFBE1eWJHKlmUtPGj2IYxWR1TbOHzBadDNxI:1vqpZj:T4vlHDLOfXX2ythfjs3_n6j9lQfjsNGH16OTkNBx7ys",
+    "expire_date": "2026-02-27T09:34:59.728Z"
+  }
+},
+{
+  "model": "webshop.category",
+  "pk": 1,
+  "fields": {
+    "name": "Action",
+    "slug": "action"
+  }
+},
+{
+  "model": "webshop.category",
+  "pk": 2,
+  "fields": {
+    "name": "Fantasy",
+    "slug": "fantasy"
+  }
+},
+{
+  "model": "webshop.category",
+  "pk": 3,
+  "fields": {
+    "name": "Isekai",
+    "slug": "isekai"
+  }
+},
+{
+  "model": "webshop.category",
+  "pk": 4,
+  "fields": {
+    "name": "Romance",
+    "slug": "romance"
+  }
+},
+{
+  "model": "webshop.category",
+  "pk": 6,
+  "fields": {
+    "name": "Horror",
+    "slug": "horror"
+  }
+},
+{
+  "model": "webshop.product",
+  "pk": 1,
+  "fields": {
+    "title": "Berserk",
+    "description": "Guts, a former mercenary now known as the Black Swordsman, is out for revenge. After a tumultuous childhood, he finally finds someone he respects and believes he can trust, only to have everything fall apart when this person takes away everything important to Guts for the purpose of fulfilling his own desires. Now marked for death, Guts becomes condemned to a fate in which he is relentlessly pursued by demonic beings.\r\n\r\nSetting out on a dreadful quest riddled with misfortune, Guts, armed with a massive sword and monstrous strength, will let nothing stop him, not even death itself, until he is finally able to take the head of the one who stripped himùand his loved oneùof their humanity.",
+    "price": "9.95",
+    "cover": "berserk.jpg",
+    "category": 6
+  }
+},
+{
+  "model": "webshop.product",
+  "pk": 2,
+  "fields": {
+    "title": "Vagabond",
+    "description": "In 16th-century Japan, Shinmen Takezou is a wild, rough young man in both his appearance and his actions. His aggressive nature has won him the collective reproach and fear of his village, leading him and his best friend, Matahachi Honiden, to run away in search of something grander than provincial life. The pair enlist in the Toyotomi army, yearning for gloryùbut when the Toyotomi suffer a crushing defeat at the hands of the Tokugawa Clan at the Battle of Sekigahara, the friends barely make it out alive.\r\n\r\nAfter the two are separated, Shinmen returns home on a self-appointed mission to notify the Hon'iden family of Matahachi's survival. He instead finds himself a wanted criminal, framed for his friend's supposed murder based on his history of violence. Upon being captured, he is strung up on a tree and left to die. An itinerant monk, the distinguished Takuan Soho, takes pity on the \"devil child,\" secretly freeing Shinmen and christening him with a new name to avoid pursuit by the authorities: Musashi Miyamoto.\r\n\r\nVagabond is the fictitious retelling of the life of one of Japan's most renowned swordsmen, the \"Sword Saint\" Musashi Miyamotoùhis rise from a swordsman with no desire other than to become \"Invincible Under the Heavens\" to an enlightened warrior who slowly learns of the importance of close friends, self-reflection, and life itself.",
+    "price": "12.90",
+    "cover": "vagabond.jpg",
+    "category": 1
+  }
+},
+{
+  "model": "webshop.product",
+  "pk": 3,
+  "fields": {
+    "title": "One Piece",
+    "description": "Gol D. Roger, a man referred to as the King of the Pirates, is set to be executed by the World Government. But just before his demise, he confirms the existence of a great treasure, One Piece, located somewhere within the vast ocean known as the Grand Line. Announcing that One Piece can be claimed by anyone worthy enough to reach it, the King of the Pirates is executed and the Great Age of Pirates begins.\r\n\r\nTwenty-two years later, a young man by the name of Monkey D. Luffy is ready to embark on his own adventure, searching for One Piece and striving to become the new King of the Pirates. Armed with just a straw hat, a small boat, and an elastic body, he sets out on a fantastic journey to gather his own crew and a worthy ship that will take them across the Grand Line to claim the greatest status on the high seas.",
+    "price": "18.50",
+    "cover": "op_cover.jpeg",
+    "category": 2
+  }
+},
+{
+  "model": "webshop.product",
+  "pk": 4,
+  "fields": {
+    "title": "Frieren: Beyond Journey's End",
+    "description": "The Demon King has been defeated, and the victorious hero party returns home before disbanding. The fourùmage Frieren, hero Himmel, priest Heiter, and warrior Eisenùreminisce about their decade-long journey as the moment to bid each other farewell arrives. But the passing of time is different for elves, thus Frieren witnesses her companions slowly pass away one by one.\r\n\r\nBefore his death, Heiter manages to foist a young human apprentice called Fern onto Frieren. Driven by the elf's passion for collecting a myriad of magic spells, the pair embarks on a seemingly aimless journey, revisiting the places that the heroes of yore had visited. Along their travels, Frieren slowly confronts her regrets of missed opportunities to form deeper bonds with her now-deceased comrades.",
+    "price": "7.95",
+    "cover": "frieren.jpg",
+    "category": 2
+  }
+},
+{
+  "model": "webshop.product",
+  "pk": 5,
+  "fields": {
+    "title": "One-Punch Man",
+    "description": "After rigorously training for three years, the ordinary Saitama has gained immense strength which allows him to take out anyone and anything with just one punch. He decides to put his new skill to good use by becoming a hero. However, he quickly becomes bored with easily defeating monsters, and wants someone to give him a challenge to bring back the spark of being a hero.\r\n\r\nUpon bearing witness to Saitama's amazing power, Genos, a cyborg, is determined to become Saitama's apprentice. During this time, Saitama realizes he is neither getting the recognition that he deserves nor known by the people due to him not being a part of the Hero Association. Wanting to boost his reputation, Saitama decides to have Genos register with him, in exchange for taking him in as a pupil. Together, the two begin working their way up toward becoming true heroes, hoping to find strong enemies and earn respect in the process.",
+    "price": "15.00",
+    "cover": "opm.jpg",
+    "category": 1
+  }
+},
+{
+  "model": "webshop.product",
+  "pk": 6,
+  "fields": {
+    "title": "Attack on Titan",
+    "description": "Hundreds of years ago, horrifying creatures which resembled humans appeared. These mindless, towering giants, called Titans, proved to be an existential threat, as they preyed on whatever humans they could find in order to satisfy a seemingly unending appetite. Unable to effectively combat the Titans, mankind was forced to barricade themselves within large walls surrounding what may very well be humanity's last safe haven in the world.\r\n\r\nIn the present day, life within the walls has finally found peace, since the residents have not dealt with Titans for many years. Eren Yeager, Mikasa Ackerman, and Armin Arlert are three young children who dream of experiencing all that the world has to offer, having grown up hearing stories of the wonders beyond the walls. But when the state of tranquility is suddenly shattered by the attack of a massive 60-meter Titan, they quickly learn just how cruel the world can be. On that day, Eren makes a promise to himself that he will do whatever it takes to eradicate every single Titan off the face of the Earth, with the hope that one day, humanity will once again be able to live outside the walls without fear.",
+    "price": "12.95",
+    "cover": "aot.jpg",
+    "category": 1
+  }
+},
+{
+  "model": "webshop.product",
+  "pk": 7,
+  "fields": {
+    "title": "Tokyo Ghoul",
+    "description": "Lurking within the shadows of Tokyo are frightening beings known as ghouls, who satisfy their hunger by feeding on humans once night falls. An organization known as the Commission of Counter Ghoul (CCG) has been established in response to the constant attacks on citizens and as a means of purging these creatures. However, the problem lies in identifying ghouls as they disguise themselves as humans, living amongst the masses so that hunting prey will be easier. Ken Kaneki, an unsuspecting university freshman, finds himself caught in a world between humans and ghouls when his date turns out to be a ghoul after his flesh.\r\n\r\nBarely surviving this encounter after being taken to a hospital, he discovers that he has turned into a half-ghoul as a result of the surgery he received. Unable to satisfy his intense craving for human meat through conventional means, Kaneki is taken in by friendly ghouls who run a coffee shop in order to help him with his transition. As he begins what he thinks will be a peaceful new life, little does he know that he is about to find himself at the center of a war between his new comrades and the forces of the CCG, and that his new existence has caught the attention of ghouls all over Tokyo.",
+    "price": "6.95",
+    "cover": "tokyo.jpg",
+    "category": 6
+  }
+},
+{
+  "model": "webshop.product",
+  "pk": 8,
+  "fields": {
+    "title": "Horimiya",
+    "description": "Although admired at school for her amiability and academic prowess, high school student Kyouko Hori has been hiding another side of her. With her parents often away from home due to work, Hori has to look after her younger brother and do the housework, leaving no chance to socialize away from school.\r\n\r\nMeanwhile, Izumi Miyamura is seen as a brooding, glasses-wearing otaku. However, in reality, he is a gentle person inept at studying. Furthermore, he has nine piercings hidden behind his long hair and a tattoo along his back and left shoulder.\r\n\r\nBy sheer chance, Hori and Miyamura cross paths outside of schoolùneither looking as the other expects. These seemingly polar opposites become friends, sharing with each other a side they have never shown to anyone else.",
+    "price": "24.95",
+    "cover": "hori.jpg",
+    "category": 4
+  }
+},
+{
+  "model": "webshop.product",
+  "pk": 9,
+  "fields": {
+    "title": "That Time I Got Reincarnated as a Slime",
+    "description": "It is just another ordinary day for Satoru Mikami. The sun is shining brightly on the streets of Tokyo, and he is in the midst of a discussion with his colleagues when suddenly he gets stabbed by a passing robber. The average 37-year-old corporate worker is now at death's door, and he has only one regretùdying a virgin. Fading out, he is startled by a mysterious AI-like voice reciting commands.\r\n\r\nSatoru abruptly wakes up in the middle of a strange cave, but something odd has happened: he is now a goop of slime! Thanks to his new body, he has acquired the skill to absorb anything and obtain its appearance and abilities. While testing out his newfound powers and exploring the cave, he stumbles upon a massive dragon named Veldora, who has been sealed away for the past three hundred years. After quickly befriending the beast, Satoru decides to help him escape; in exchange, Satoru is bestowed a new name: \"Rimuru Tempest.\"\r\n\r\nWishing to avoid a life like his boring and mundane past, Rimuru is about to set out on a grand quest that will change his own destiny and the fate of his new world.",
+    "price": "8.90",
+    "cover": "slime.jpg",
+    "category": 3
+  }
+},
+{
+  "model": "webshop.product",
+  "pk": 10,
+  "fields": {
+    "title": "Noragami: Stray God",
+    "description": "As a relatively unknown minor deity without any worshippers, Delivery God Yato takes on odd jobs for only five yen, with the goal of amassing a fortune large enough to buy himself a shrine. But in addition to obscurity, he has another problem: his Shinki, or weapon partner, has decided to resign, tired of being with a homeless god. Left with no weapon, Yato takes on more jobs, hoping to find a new partner soon.\r\n\r\nWhile out putting up fliers for a missing cat, Yato sees said cat and chases after him, right into the path of an oncoming vehicle. Hiyori Iki, a nearby girl, rushes to push Yato out of the way and ends up hurting herself. After waking up in the hospital, she discovers the incident has knocked her soul loose from her body. Realizing his actions caused this, Yato promises to help return Hiyori to normalùfor five yen of course. But in order to return her to normal, he requires a new Shinki, which he finds in the rebellious spirit Yukine.\r\n\r\nNoragami tells the story of a girl walking the line between two worlds and a stray deity's quest for a place to call his own.",
+    "price": "20.00",
+    "cover": "noragami.jpg",
+    "category": 2
+  }
+},
+{
+  "model": "webshop.product",
+  "pk": 11,
+  "fields": {
+    "title": "Re:ZERO -Starting Life in Another World",
+    "description": "Exiting the convenience store, Subaru Natsuki emerges to a busy town inhabited by humans and demi-humans. Using dragons and carriages as transportation, the town is clearly not the modern-day Japan that he is familiar with. However, as someone who spends his days engrossed in comics and games, Subaru assumes that he is a protagonist in this new fantasy world, harnessing supreme magical powers.\r\n\r\nMuch to his dismay, that is not the case and things quickly go awry as he bumps into a group of thugs. Fortunately, a silver-haired beauty named Satella comes to his rescue, while looking for her stolen insignia. In return for her kindness, Subaru offers to help with the search, which eventually leads them to a loot shop. Assuming that the insignia was traded for money, Subaru enters the shop hoping to negotiate with the owner regarding the stolen item. However, much to his surprise, what awaits them is not the insignia but a brutal assassin that leads the two to their demise.\r\n\r\nBut instead of waking up in the afterlife, Subaru is shocked to find himself standing alone in the midst of daytime, as if he never left the town in the first place. Thus, his life in another world mysteriously begins a second time.",
+    "price": "5.50",
+    "cover": "zero.jpg",
+    "category": 3
+  }
+},
+{
+  "model": "webshop.product",
+  "pk": 12,
+  "fields": {
+    "title": "Jujutsu Kaisen",
+    "description": "Hidden in plain sight, an age-old conflict rages on. Supernatural monsters known as Curses terrorize humanity from the shadows, and powerful humans known as Jujutsu sorcerers use mystical arts to exterminate them. When high school student Yuuji Itadori finds a dried-up finger of the legendary Curse Sukuna Ryoumen, he suddenly finds himself joining this bloody conflict.\r\n\r\nAttacked by a Curse attracted to the finger's power, Yuuji makes a reckless decision to protect himself, gaining the power to combat Curses in the process but also unwittingly unleashing the malicious Sukuna into the world once more. Though Yuuji can control and confine Sukuna to his own body, the Jujutsu world classifies Yuuji as a dangerous, high-level Curse who must be exterminated.\r\n\r\nDetained and sentenced to death, Yuuji meets Satoru Gojouùa teacher at Jujutsu High Schoolùwho explains that despite his imminent execution, there is an alternative for him. Being a rare vessel to Sukuna, if Yuuji were to die, then Sukuna would perish too. Therefore, if Yuuji were to consume the many other remnants of Sukuna, then Yuuji's subsequent execution would truly eradicate the malicious demon. Taking up this chance to make the world safer and live his life for a little longer, Yuuji enrolls in Tokyo Prefectural Jujutsu High School, jumping headfirst into a harsh and unforgiving battlefield.",
+    "price": "18.00",
+    "cover": "jjk.jpg",
+    "category": 1
+  }
+},
+{
+  "model": "webshop.product",
+  "pk": 13,
+  "fields": {
+    "title": "Ao Haru Ride",
+    "description": "While most girls desire popularity among boys, Futaba Yoshioka wants the exact opposite. After attracting many admirers back in middle school which resulted in her being shunned by her female classmates, she decided that high school will be her chance to revamp her image. Therefore, she starts acting unfeminine and indifferent to boys, allowing her to make some \"friends\" along the way.\r\n\r\nLittle does Futaba know, her life will take another drastic turn when her first love, Kou Mabuchi, returns after his sudden disappearance years ago in middle school. Despite his extended absence, the fond memories they shared together still linger in her mind, and she wishes to return to those days. But she realizes that the sweet, gentle boy of the past has completely vanished, and in his place stands someone cold and pessimistic. While he admits that her feelings for him back then were mutual, he warns that they can never go back to the past, as everything, including him, has changed.\r\n\r\nAo Haru Ride follows Futaba as she searches for true love and friendship, all while trying her best to stay true to herself.",
+    "price": "6.95",
+    "cover": "ao.jpg",
+    "category": 4
+  }
+},
+{
+  "model": "webshop.cartitem",
+  "pk": 1,
+  "fields": {
+    "cart": 1,
+    "product": 1,
+    "quantity": 1,
+    "unit_price": "10.00"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add product",
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change product",
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete product",
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view product",
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add user",
+    "content_type": [
+      "webshop",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change user",
+    "content_type": [
+      "webshop",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete user",
+    "content_type": [
+      "webshop",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view user",
+    "content_type": [
+      "webshop",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add address",
+    "content_type": [
+      "webshop",
+      "address"
+    ],
+    "codename": "add_address"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change address",
+    "content_type": [
+      "webshop",
+      "address"
+    ],
+    "codename": "change_address"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete address",
+    "content_type": [
+      "webshop",
+      "address"
+    ],
+    "codename": "delete_address"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view address",
+    "content_type": [
+      "webshop",
+      "address"
+    ],
+    "codename": "view_address"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add order",
+    "content_type": [
+      "webshop",
+      "order"
+    ],
+    "codename": "add_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change order",
+    "content_type": [
+      "webshop",
+      "order"
+    ],
+    "codename": "change_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete order",
+    "content_type": [
+      "webshop",
+      "order"
+    ],
+    "codename": "delete_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view order",
+    "content_type": [
+      "webshop",
+      "order"
+    ],
+    "codename": "view_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add cart item",
+    "content_type": [
+      "webshop",
+      "cartitem"
+    ],
+    "codename": "add_cartitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change cart item",
+    "content_type": [
+      "webshop",
+      "cartitem"
+    ],
+    "codename": "change_cartitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete cart item",
+    "content_type": [
+      "webshop",
+      "cartitem"
+    ],
+    "codename": "delete_cartitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view cart item",
+    "content_type": [
+      "webshop",
+      "cartitem"
+    ],
+    "codename": "view_cartitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add order item",
+    "content_type": [
+      "webshop",
+      "orderitem"
+    ],
+    "codename": "add_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change order item",
+    "content_type": [
+      "webshop",
+      "orderitem"
+    ],
+    "codename": "change_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete order item",
+    "content_type": [
+      "webshop",
+      "orderitem"
+    ],
+    "codename": "delete_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view order item",
+    "content_type": [
+      "webshop",
+      "orderitem"
+    ],
+    "codename": "view_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add cart",
+    "content_type": [
+      "webshop",
+      "cart"
+    ],
+    "codename": "add_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change cart",
+    "content_type": [
+      "webshop",
+      "cart"
+    ],
+    "codename": "change_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete cart",
+    "content_type": [
+      "webshop",
+      "cart"
+    ],
+    "codename": "delete_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view cart",
+    "content_type": [
+      "webshop",
+      "cart"
+    ],
+    "codename": "view_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add category",
+    "content_type": [
+      "webshop",
+      "category"
+    ],
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change category",
+    "content_type": [
+      "webshop",
+      "category"
+    ],
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete category",
+    "content_type": [
+      "webshop",
+      "category"
+    ],
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view category",
+    "content_type": [
+      "webshop",
+      "category"
+    ],
+    "codename": "view_category"
+  }
+},
+{
+  "model": "webshop.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$2YDvXGqBDqLaROsFE44CN1$P4peFp+8r8dL6CtvSDYQKU7qYfHOriHc+JLySbCudIk=",
+    "last_login": "2026-02-13T09:34:59.725Z",
+    "is_superuser": true,
+    "email": "jancg@outlook.de",
+    "username": "Nylm",
+    "date_joined": "2026-02-12T06:47:03.674Z",
+    "is_active": true,
+    "is_staff": true,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "webshop.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$15pjvoahLldyNZDyGEK1Ku$/31iH7DBc5A+4KsfAHZ9amIdFw/A8NziudhepzdphkU=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "test@test.de",
+    "username": null,
+    "date_joined": "2026-02-16T21:25:47.083Z",
+    "is_active": true,
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "webshop.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$V4s2rSFDs3zxpY0TSLHUrP$7amh8Gj/LxM0i1OBQntZSEhEw3t6ierPProTN+QsrgI=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "test@test123.de",
+    "username": null,
+    "date_joined": "2026-02-16T23:27:06.354Z",
+    "is_active": true,
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "webshop.address",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "country": "Deutschland",
+    "postal_code": "23858",
+    "city": "Reinfeld",
+    "state": "Schleswig-Holstein",
+    "address": "Hamburger Chaussee 9",
+    "address_extra": "",
+    "extra_info": "",
+    "is_default": false,
+    "created_at": "2026-02-12T07:33:26Z",
+    "updated_at": "2026-02-13T16:28:15.637Z"
+  }
+},
+{
+  "model": "webshop.address",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "country": "Deutschland",
+    "postal_code": "23843",
+    "city": "Bad Oldesloe",
+    "state": "Schleswig-Holstein",
+    "address": "P÷litzer Weg 34",
+    "address_extra": "",
+    "extra_info": "",
+    "is_default": false,
+    "created_at": "2026-02-12T07:47:14Z",
+    "updated_at": "2026-02-13T16:28:15.637Z"
+  }
+},
+{
+  "model": "webshop.cart",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "total_price": "0.00",
+    "created_at": "2026-02-15T17:34:59Z",
+    "updated_at": "2026-02-15T17:34:59Z"
+  }
+},
+{
+  "model": "webshop.order",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "cart": null,
+    "status": "PLACED",
+    "shipping_address": [
+      "jancg@outlook.de"
+    ],
+    "created_at": "2026-02-12T13:06:37.915Z",
+    "updated_at": "2026-02-12T13:06:37.915Z"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-02-12T07:33:59.094Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "address"
+    ],
+    "object_id": "1",
+    "object_repr": "Nylm Hamburger Chaussee 9  23858 Reinfeld Schleswig-Holstein Deutschland",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-02-12T07:47:51.073Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "address"
+    ],
+    "object_id": "2",
+    "object_repr": "Nylm P÷litzer Weg 34  23843 Bad Oldesloe Schleswig-Holstein Deutschland",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-02-12T13:06:37.916Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "order"
+    ],
+    "object_id": "1",
+    "object_repr": "Order object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-02-13T09:36:20.647Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "category"
+    ],
+    "object_id": "1",
+    "object_repr": "Action",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-02-13T09:36:26.723Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "category"
+    ],
+    "object_id": "2",
+    "object_repr": "Fantasy",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-02-13T13:54:33.053Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "category"
+    ],
+    "object_id": "3",
+    "object_repr": "Isekai",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-02-13T14:55:11.043Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "2",
+    "object_repr": "Attack on Titan",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-02-13T14:55:35.490Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "3",
+    "object_repr": "Death Note",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-02-13T14:56:02.094Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "4",
+    "object_repr": "Slime datta Ken",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-02-13T16:30:37.607Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "5",
+    "object_repr": "One Piece",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-02-15T17:35:14.041Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "cart"
+    ],
+    "object_id": "1",
+    "object_repr": "Cart object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-02-15T17:35:26.505Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "cartitem"
+    ],
+    "object_id": "1",
+    "object_repr": "CartItem object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-02-17T00:08:33.753Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "category"
+    ],
+    "object_id": "4",
+    "object_repr": "Romance",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-02-17T00:08:53.769Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "category"
+    ],
+    "object_id": "5",
+    "object_repr": "Seinen",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-02-17T00:09:01.949Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "category"
+    ],
+    "object_id": "6",
+    "object_repr": "Horror",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-02-17T00:12:07.172Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "1",
+    "object_repr": "Berserk",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Description\", \"Price\", \"Cover\", \"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-02-17T00:14:28.463Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "1",
+    "object_repr": "Berserk",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-02-17T00:19:37.230Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "2",
+    "object_repr": "Vagabond",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Description\", \"Price\", \"Cover\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-02-17T00:22:02.999Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "3",
+    "object_repr": "One Piece",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Description\", \"Price\", \"Cover\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-02-17T00:23:41.785Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "4",
+    "object_repr": "Frieren: Beyond Journey's End",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Description\", \"Price\", \"Cover\", \"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-02-17T00:26:41.866Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "5",
+    "object_repr": "One-Punch Man",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Description\", \"Price\", \"Cover\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-02-17T00:27:04.386Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "5",
+    "object_repr": "One-Punch Man",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cover\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-02-17T00:28:39.483Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "category"
+    ],
+    "object_id": "5",
+    "object_repr": "Seinen",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-02-17T00:30:23.943Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "6",
+    "object_repr": "Attack on Titan",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-02-17T00:31:56.041Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "7",
+    "object_repr": "Tokyo Ghoul",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-02-17T00:34:40.415Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "8",
+    "object_repr": "Horimiya",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-02-17T00:36:52.068Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "9",
+    "object_repr": "That Time I Got Reincarnated as a Slime",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-02-17T00:38:53.773Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "10",
+    "object_repr": "Noragami: Stray God",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-02-17T00:42:20.192Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "11",
+    "object_repr": "Re:ZERO -Starting Life in Another World",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2026-02-17T00:44:47.052Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "12",
+    "object_repr": "Jujutsu Kaisen",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2026-02-17T00:46:56.824Z",
+    "user": [
+      "jancg@outlook.de"
+    ],
+    "content_type": [
+      "webshop",
+      "product"
+    ],
+    "object_id": "13",
+    "object_repr": "Ao Haru Ride",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]
