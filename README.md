@@ -17,6 +17,22 @@ py -m venv venv
 
 ### Setup the DB
 
+Pre configured is a MySQL database connection. The DB needs manual init
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'webshop',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
+```
+
+### Migration + Loading DB dump
+
 ```
 python manage.py migrate
 python manage.py loaddata db_data.json
