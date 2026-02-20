@@ -2,7 +2,10 @@
 
 ## Backend
 
-`cd backend`
+```
+cd backend
+```
+
 
 ### Create virtual environment and activate it
 
@@ -13,7 +16,9 @@ py -m venv venv
 
 ### Installing required backend packages
 
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
 ### Setup the DB
 
@@ -49,13 +54,23 @@ python manage.py runserver
 cd frontend
 ```
 
+### adding .env from the .env.example
+
+```
+cp .env.example .env
+```
+
 ### Install packages
 
-`npm install`
+```
+npm install
+```
 
 ### Start react development server
 
-`npm start`
+```
+npm start
+```
 
 ---------------------------------------------
 # Test User
