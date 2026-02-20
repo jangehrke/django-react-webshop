@@ -39,7 +39,9 @@ export function CartProvider({children}) {
             const data = res?.data;
             quantity = data.quantity;
         } else {
-            quantity = existing ? existing.quantity + 1 : 1;
+            quantity = existing
+                ? existing.quantity + 1
+                : 1;
         }
 
         setCart(currentCart => {
@@ -52,58 +54,64 @@ export function CartProvider({children}) {
                 )
             } else {
                 showAlert('success', `Added ${product.title} to Cart`);
-                return [...currentCart, {product: {...product}, quantity: quantity, unit_price: product.price}];
+                return [...currentCart,
+                    {
+                        product:
+                            {...product},
+                        quantity: quantity,
+                        unit_price: product.price
+                    }
+                ];
             }
         })
-}
-
-const increaseQuantity = async (product) => {
-    if (user) await postData(cartProduct(product.product, 1));
-    setCart(currentCart => {
-        return currentCart.map(item =>
-            item.product.id === product.product.id
-                ? {...item, quantity: item.quantity + 1}
-                : item
-        )
-    })
-    showAlert('success', 'Increased Quantity');
-}
-
-const decreaseQuantity = async (product) => {
-    if (user) await postData(cartProduct(product.product, -1));
-    setCart(currentCart => {
-        return currentCart.map(item =>
-            item.product.id === product.product.id
-                ? {...item, quantity: item.quantity - 1}
-                : item
-        ).filter(item => item.quantity > 0);
-    })
-    showAlert('danger', 'Decreased Quantity');
-}
-
-const cartProduct = (product, quantity) => {
-    return {
-        "product_id": product.id,
-        "quantity": quantity,
-        "unit_price": product.price,
     }
-}
 
-return (
-    <CartContext.Provider
-        value={{
-            cartOpen,
-            openCart,
-            closeCart,
-            cart,
-            addToCart,
-            increaseQuantity,
-            decreaseQuantity
-        }}>
-        {children}
-    </CartContext.Provider>
-);
+    const increaseQuantity = async (product) => {
+        if (user) await postData(cartProduct(product.product, 1));
+        setCart(currentCart => {
+            return currentCart.map(item =>
+                item.product.id === product.product.id
+                    ? {...item, quantity: item.quantity + 1}
+                    : item
+            )
+        })
+        showAlert('success', 'Increased Quantity');
+    }
 
+    const decreaseQuantity = async (product) => {
+        if (user) await postData(cartProduct(product.product, -1));
+        setCart(currentCart => {
+            return currentCart.map(item =>
+                item.product.id === product.product.id
+                    ? {...item, quantity: item.quantity - 1}
+                    : item
+            ).filter(item => item.quantity > 0);
+        })
+        showAlert('danger', 'Decreased Quantity');
+    }
+
+    const cartProduct = (product, quantity) => {
+        return {
+            "product_id": product.id,
+            "quantity": quantity,
+            "unit_price": product.price,
+        }
+    }
+
+    return (
+        <CartContext.Provider
+            value={{
+                cartOpen,
+                openCart,
+                closeCart,
+                cart,
+                addToCart,
+                increaseQuantity,
+                decreaseQuantity
+            }}>
+            {children}
+        </CartContext.Provider>
+    );
 }
 
 export function useCart() {
