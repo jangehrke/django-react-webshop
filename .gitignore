@@ -1,19 +1,16 @@
-# Python / Django
+# IntelliJ / PyCharm output
+out/
+*.iml
+.idea/
+
+# Python cache
 *.pyc
 __pycache__/
-db.sqlite3
-venv/
-*.env
 
-# Django migrations cache
-backend/webshop/migrations/__pycache__/
+# Virtual environment
+venv/
 
 # React / Node
 frontend/node_modules/
 frontend/build/
 frontend/.env
-
-# IDEs
-.idea/
-.vscode/
-*.iml

@@ -1,13 +1,11 @@
-import {useState, useEffect} from 'react';
+import {useEffect, useState} from 'react';
 import {api} from "../api/api";
 
 export function useFetch(url) {
     const [data, setData] = useState([]);
-    const [error, setError] = useState(null);
 
     useEffect(() => {
         setData([]);
-        setError(null);
         console.log(url)
         api.get(url)
             .then(res => {
@@ -15,20 +13,19 @@ export function useFetch(url) {
                 console.log(res.data);
             })
             .catch(err => {
-                setError(err);
-                console.log(error)
+                console.log(err)
             })
     }, [url])
-
-    return {data, error};
+    return { data };
 }
 
-export function usePost(url, data) {
-    return api.post(url, data)
-        .then(res => {
-            console.log(res)
-        })
-        .catch(err => {
-            console.log(err)
-        })
+export function usePost(url) {
+    const [response, setResponse] = useState([]);
+    const postData = async (data) => {
+        const response = await api.post(url, data);
+        setResponse(response.data);
+        console.log(response);
+        return response;
+    }
+    return { postData, response }
 }
