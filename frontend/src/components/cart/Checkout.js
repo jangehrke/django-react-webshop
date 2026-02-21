@@ -1,7 +1,7 @@
 import {useCart} from "./CartContext";
 import {Button, Col, Row} from "react-bootstrap";
 
-export function Checkout() {
+export function CheckoutI() {
     const { cart, decreaseQuantity, increaseQuantity} = useCart();
 
     function totalPriceItem(unit_price, quantity) {
@@ -30,7 +30,6 @@ export function Checkout() {
                     </Col>
                     <Col className="text-end">{item.unit_price} €</Col>
                     <Col className="text-end">{totalPriceItem(item.quantity,  item.unit_price).toFixed(2)} €</Col>
-
                     <hr/>
                 </Row>
             ))
@@ -45,4 +44,13 @@ export function Checkout() {
             </Row>
         </div>
     );
+}
+
+export function Checkout() {
+    const { cart, decreaseQuantity, increaseQuantity} = useCart();
+    return (
+        <div className="container-fluid">
+
+        </div>
+    )
 }

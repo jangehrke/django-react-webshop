@@ -1,15 +1,21 @@
 import Modal from 'react-bootstrap/Modal';
 import {useCart} from "./CartContext";
 import {Button, Col, Row} from "react-bootstrap";
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 
 function Cart() {
-    const {cartOpen, closeCart, cart, decreaseQuantity, increaseQuantity} = useCart();
+    const { cartOpen, closeCart, cart, decreaseQuantity, increaseQuantity} = useCart();
+    const navigate = useNavigate();
 
     function totalPriceItem(unit_price, quantity) {
         return unit_price * quantity;
     }
     const totalPriceCart = cart.reduce((prev, curr) => prev + curr.quantity * curr.unit_price, 0);
+
+    function handleCheckout() {
+        closeCart();
+        navigate("/checkout")
+    }
 
     return (
         <Modal
@@ -49,9 +55,11 @@ function Cart() {
                     </Row>
                 ))
                 }
-                <Row>
+                <Row className="mt-3 align-items-center">
                     <Col className="text-center">
-                        <NavLink as={NavLink} to="checkout">Checkout</NavLink>
+                        <Button variant="primary" onClick={handleCheckout} disabled={cart.length === 0}>
+                            Checkout
+                        </Button>
                     </Col>
                     <Col className="text-end">
                         <strong>Total: {totalPriceCart.toFixed(2)} €</strong>

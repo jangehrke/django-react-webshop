@@ -1,14 +1,13 @@
 import {useParams} from "react-router-dom";
 import ProductGrid from "./Product";
 import {useFetch} from "../../hooks/useApi";
-import {ProductDetails} from "./ProductDetails";
 
 export default function ProductsPage() {
     const {slug} = useParams();
     const endpoint = slug
         ? `/category/${slug}/product`
         : `/product/`;
-    const { data: products = [], error } = useFetch(endpoint);
+    const { data: products = [] } = useFetch(endpoint);
 
     return (
         <div className='container-fluid'>

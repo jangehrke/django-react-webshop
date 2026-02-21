@@ -7,7 +7,7 @@ import {useCart} from "../cart/CartContext";
 export function ProductDetails() {
     const { product_id} = useParams();
     const { data: product = {}} = useFetch(`product/${product_id}`);
-    const {addToCart} = useCart()
+    const { addToCart } = useCart()
 
     return (
         <div className='container-fluid'>
