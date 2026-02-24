@@ -6,7 +6,6 @@ export function useFetch(url) {
 
     useEffect(() => {
         setData([]);
-        console.log(url)
         api.get(url)
             .then(res => {
                 setData(res.data);
@@ -24,7 +23,6 @@ export function usePost(url) {
     const postData = async (data) => {
         const response = await api.post(url, data);
         setResponse(response.data);
-        console.log(response);
         return response;
     }
     return { postData, response }
