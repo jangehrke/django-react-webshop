@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useAuth} from "../../AuthContext";
 import {NavLink, useNavigate} from "react-router-dom";
-import {Button} from "react-bootstrap";
+import {Button, Card, Col, Container, Form, Row} from "react-bootstrap";
 import {useAlert} from "../alerts/AlertContext";
 
 export function Register() {
@@ -17,6 +17,7 @@ export function Register() {
     const submit = async (x) => {
         x.preventDefault();
         if (password !== confirmPassword) {
+            showAlert('danger', "Passwords don´t match")
             return;
         }
         const response = await register(email, password, confirmPassword);
@@ -24,44 +25,55 @@ export function Register() {
     }
 
     return (
-        <div className="container-fluid">
-            <h1>Register</h1>
-            <form onSubmit={submit}>
-                <div className="row g-3 align-items-center">
-                    <div className="col-auto">
-                        <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-                        <input
-                            type="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            className="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"/>
-                        <div id="emailHelp" className="form-text"></div>
-
-                        <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-                        <input
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            className="form-control"
-                            id="exampleInputPassword1"/>
-
-                        <label htmlFor="exampleInputPassword1" className="form-label">Confirm password</label>
-                        <input
-                            type="password"
-                            value={confirmPassword}
-                            onChange={(e) => setConfirmPassword(e.target.value)}
-                            className="form-control"
-                            id="exampleInputPassword1"/>
-                    </div>
-                    <div className="form-check p-2">
-                        <button type="submit" className="btn btn-primary">Register</button>
-                        <Button as={NavLink} to="/login">Already have an account?</Button>
-                    </div>
-                </div>
-            </form>
-        </div>
-
+        <Container className="my-5 d-flex justify-content-center">
+            <Card className="my-2">
+                <Card.Title className="text-center p-4">
+                    <h2>Register</h2>
+                </Card.Title>
+                <Card.Body>
+                    <Form onSubmit={submit} className="row g-3 justify-content-center">
+                        <Row className="w-100 justify-content-center">
+                            <Col xs={10} className="mb-3">
+                                <label className="form-label">Email address</label>
+                                <input
+                                    type="email"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    className="form-control"
+                                    placeholder="Enter email"
+                                    required
+                                />
+                            </Col>
+                            <Col xs={5} className="mb-3">
+                                <label className="form-label">Password</label>
+                                <input
+                                    type="password"
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    className="form-control"
+                                    placeholder="Enter password"
+                                />
+                            </Col>
+                            <Col xs={5} className="mb-4">
+                                <label className="form-label">Confirm password</label>
+                                <input
+                                    type="password"
+                                    value={confirmPassword}
+                                    onChange={(e) => setConfirmPassword(e.target.value)}
+                                    className="form-control"
+                                    placeholder="Enter password again"
+                                />
+                            </Col>
+                            <Col xs={10} className="mb-3">
+                                <Button type="submit" className="w-100" variant="success">Create Account</Button>
+                            </Col>
+                            <Col xs={10} className="mb-3">
+                                <Button as={NavLink} to="/login" variant="outline-danger">Back to login</Button>
+                            </Col>
+                        </Row>
+                    </Form>
+                </Card.Body>
+            </Card>
+        </Container>
     )
 }

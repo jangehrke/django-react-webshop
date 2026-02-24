@@ -1,35 +1,43 @@
 import {useFetch} from "../../hooks/useApi";
 import {useParams} from "react-router-dom";
-import {Button, Card} from "react-bootstrap";
+import {Button, Card, Col, Container, Row} from "react-bootstrap";
 import {useCart} from "../cart/CartContext";
 
 
 export function ProductDetails() {
-    const { product_id} = useParams();
-    const { data: product = {}} = useFetch(`product/${product_id}`);
-    const { addToCart } = useCart()
+    const {product_id} = useParams();
+    const {data: product = {}} = useFetch(`product/${product_id}`);
+    const {addToCart, isInCart} = useCart()
+
+    const inCart = isInCart(product.id);
 
     return (
-        <div className='container-fluid'>
-            <div className="card mb-3">
-                <div className="row g-0">
-                    <div className="col-md-4">
-                        <Card.Img variant="top" src={product.cover
-                            ? "/images/" + product.cover
-                            : "/images/op_cover.jpeg"}/>
-                    </div>
-                    <div className="col-md-8">
-                        <div className="card-body">
-                            <h5 className="card-title"><strong>{product.title}</strong></h5>
-                            <p className="card-text">{product.description}</p>
-                            <Card.Title>{product.price} €</Card.Title>
-                            <Button onClick={() => addToCart(product)}>Add to Cart</Button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
+        <Container className="my-5">
+            <Row className="align-items-center">
+                <Col md={5} className="mb-4">
+                    <Card className="border-0">
+                        <Card.Img src={
+                            product.cover
+                                ? "/images/" + product.cover
+                                : "/images/op_cover.jpeg"}
+                                  className="p-3"
+                                  style={{objectFit: "contain", height: "600px", border: "1px solid black"}}
+                        />
+                    </Card>
+                </Col>
+                <Col md={7}>
+                    <h1 className="display-5 fw-bold">{product.title}</h1>
+                    <h3 className="mb-4">{product.price} €</h3>
+                    <p className="text-muted mb-4">{product.description}</p>
+                    <Button
+                        onClick={() => addToCart(product)}
+                        variant={inCart ? "danger" : "success"}
+                        disabled={inCart}
+                    >
+                        {inCart ? "Already in Cart" : "Add To Cart"}
+                    </Button>
+                </Col>
+            </Row>
+        </Container>
     )
 }

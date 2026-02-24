@@ -33,7 +33,7 @@ export const AuthProvider = ({children}) => {
             const {access, refresh} = response.data;
             localStorage.setItem('access_token', access);
             localStorage.setItem('refresh_token', refresh);
-            setUser({isAuthenticated: true});
+            setUser({isAuthenticated: true, email: email});
             showAlert('success', "Successfully logged in!");
             return true;
         } catch (error) {

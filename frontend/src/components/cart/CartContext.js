@@ -98,16 +98,27 @@ export function CartProvider({children}) {
         }
     }
 
+    const isInCart = (productId) => {
+        return cart.some(cartItem => cartItem.product.id === productId);
+    }
+
+    const amountInCart = (productId) => {
+        return cart.find(cartItem => cartItem.product.id === productId)?.quantity && 0
+    }
+
     return (
         <CartContext.Provider
             value={{
+                cart,
+                setCart,
                 cartOpen,
                 openCart,
                 closeCart,
-                cart,
                 addToCart,
                 increaseQuantity,
-                decreaseQuantity
+                decreaseQuantity,
+                isInCart,
+                amountInCart,
             }}>
             {children}
         </CartContext.Provider>

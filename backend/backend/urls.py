@@ -28,7 +28,7 @@ router.register(r'user', views.UserView, 'user')
 router.register(r'categories', views.CategoryView, 'categories')
 router.register(r'cart', views.CartView, 'cart')
 router.register(r'cart-items', views.CartItemViewSet, 'cart_items')
-
+router.register(r'checkout', views.OrderView, 'order')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

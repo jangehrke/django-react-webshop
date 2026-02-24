@@ -13,7 +13,8 @@ export default function ProductGrid({products}) {
 }
 
 function ProductDetails({product}){
-    const { addToCart } = useCart()
+    const { addToCart, isInCart } = useCart()
+    const inCart = isInCart(product.id);
     return (
         <Col>
             <Card bg="dark" text="light">
@@ -36,7 +37,13 @@ function ProductDetails({product}){
                         {product.title}
                     </Card.Title>
                     <Card.Title>{product.price} €</Card.Title>
-                    <Button onClick={() => addToCart(product)}>Add to Cart</Button>
+                    <Button
+                        onClick={() => addToCart(product)}
+                        variant={inCart ? "danger" : "success"}
+                        disabled={inCart}
+                    >
+                        {inCart ? "Already in Cart" : "Add To Cart"}
+                    </Button>
                 </Card.Body>
             </Card>
         </Col>
