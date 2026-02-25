@@ -1,6 +1,5 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './App.css';
-import Home from "./components/home/Home";
 import NavbarLayout from "./components/navbar/Navbar";
 import ProductsPage from "./components/products/ProductsPage";
 import Cart from "./components/cart/Cart";
@@ -21,7 +20,7 @@ export default function App() {
                     <BrowserRouter>
                         <NavbarLayout/>
                         <Routes>
-                            <Route path="/" element={<Home/>}/>
+                            <Route path="/" element={<ProductsPage/>}/>
                             <Route path="login" element={<Login/>}/>
                             <Route path="register" element={<Register/>}/>
                             <Route path="product" element={<ProductsPage/>}/>
